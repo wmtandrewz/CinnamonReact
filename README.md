@@ -1,3 +1,3 @@
 # CinnamonReact
 
-Test project for react native with redux
+#Test project for react native with redux
