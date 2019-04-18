@@ -9,16 +9,15 @@ class Counter extends React.Component {
     render() {
         return (
 
-            <View style={{flexDirection:'row'}}>
-                <TouchableOpacity onPress={() => this.props.increaseCounter()}>
-                    <Text>Increase</Text>
-                </TouchableOpacity>
-                <Text style={{ fontSize: 24 ,marginHorizontal:20}}>{this.props.counter}</Text>
+            <View style={{ flexDirection: 'row' }}>
                 <TouchableOpacity onPress={() => this.props.decreaseCounter()}>
                     <Text>Decrease</Text>
                 </TouchableOpacity>
+                <Text style={{ fontSize: 24, marginHorizontal: 20 }}>{this.props.counter}</Text>
+                <TouchableOpacity onPress={() => this.props.increaseCounter()}>
+                    <Text>Increase</Text>
+                </TouchableOpacity>
             </View>
-
 
         );
     }
